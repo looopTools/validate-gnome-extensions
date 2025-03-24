@@ -1,0 +1,52 @@
+* Curated List of Validate Gnome Extensions
+
+*WARNING:* This is a list I maintain on my own.
+
+*WARNING:* I have no responsbility if the plugin suddenly have malicous code in it.
+
+*NOTE:* I provide this list 100% warranty free. I cannot be held responsible if something goes wrong.
+
+The Gnome Desktop Environment relies heavily on extensions for customisation of the user experience.
+This allows Gnome to provide a fairly minimal system from the start.
+
+However, blindly installing extensions can be a security risk as these basically allow for code execution on your device.
+Whilst plugins uploaded to extensions.gnome.org are reviewed, something can slip through the eyes of reviewers.
+Therefore, I have started to review some plugins, such that I can promise others that in a specific version they are safe to use.
+
+* Process
+
+My verification process is a follows:
+
+- Read and understand the code in the code repository linked from extensions.gnome.org.
+- In a virtual machine with Fedora and newest gnome available there install the plugin.
+  - Verify that the installed plugin code match the repository code
+- Describe the plugin verified
+
+* Plugins
+
+** Safe Plugins
+
+*** Notification Banner Position
+
+/Description:/ This Extension lets you move where notifications is shown along the topbar in Gnome.
+
+| Item                          | Value                                                                   |
+|-------------------------------+-------------------------------------------------------------------------|
+| Repository URL                | https://github.com/brunodrugowick/notification-position-gnome-extension |
+| Validated Version             | (git/tag) 1.0.6                                                         |
+| Commit on Repo for Validation | 34dcc6038866dc29bc66edb485379fb3aa0dc97d                                |
+
+
+*** Notification Banner Reloaded
+
+/Description:/ Similar to Notification Banner. But this provides a more fine grained control of notification position.
+
+| Item                          | Value                                                                     |
+|-------------------------------+---------------------------------------------------------------------------|
+| Gnome Extension URL           | https://extensions.gnome.org/extension/4651/notification-banner-reloaded/ |
+| Repository URL                | https://github.com/marcinjakubowski/notification-position-reloaded        |
+| Version (Gnome extension)     | 12                                                                        |
+| Commit on repo for validation | 720f7e2ec630a23c6a3328a69a8c2e1091575213                                  |
+
+
+** Unsafe Plugins
