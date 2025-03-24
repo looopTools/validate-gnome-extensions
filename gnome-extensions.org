@@ -10,14 +10,14 @@ The Gnome Desktop Environment relies heavily on extensions for customisation of 
 This allows Gnome to provide a fairly minimal system from the start.
 
 However, blindly installing extensions can be a security risk as these basically allow for code execution on your device.
-Whilst plugins uploaded to extensions.gnome.org are reviewed, something can slip through the eyes of reviewers.
+Whilst plugins uploaded to [[extensions.gnome.org][extensions.gnome.org]] are reviewed, something can slip through the eyes of reviewers.
 Therefore, I have started to review some plugins, such that I can promise others that in a specific version they are safe to use.
 
 * Process
 
 My verification process is a follows:
 
-- Read and understand the code in the code repository linked from extensions.gnome.org.
+- Read and understand the code in the code repository linked from [[extensions.gnome.org][extensions.gnome.org]].
 - In a virtual machine with Fedora and newest gnome available there install the plugin.
   - Verify that the installed plugin code match the repository code
 - Describe the plugin verified
@@ -26,15 +26,30 @@ My verification process is a follows:
 
 ** Safe Plugins
 
+*** Workspace Matrix
+
+Allows for arranging work spaces in a 2d grid instead of the default straight line.
+
+| Item                          | Value                                                         |
+|-------------------------------+---------------------------------------------------------------|
+| Gnome Extension URL           | https://extensions.gnome.org/extension/1485/workspace-matrix/ |
+| Repository URL                | https://github.com/mzur/gnome-shell-wsmatrix                  |
+| Validate Version              | (git/tag) v12.0                                               |
+| Commit on Repo for Validation | 3f654f35ff17e5b3b3007e2f09ca121da245c7e3                      |
+
+
+
+
 *** Notification Banner Position
 
 /Description:/ This Extension lets you move where notifications is shown along the topbar in Gnome.
 
-| Item                          | Value                                                                   |
-|-------------------------------+-------------------------------------------------------------------------|
-| Repository URL                | https://github.com/brunodrugowick/notification-position-gnome-extension |
-| Validated Version             | (git/tag) 1.0.6                                                         |
-| Commit on Repo for Validation | 34dcc6038866dc29bc66edb485379fb3aa0dc97d                                |
+| Item                          | Value                                                                     |
+|-------------------------------+---------------------------------------------------------------------------|
+| Gnome Extension URL           | https://extensions.gnome.org/extension/4105/notification-banner-position/ |
+| Repository URL                | https://github.com/brunodrugowick/notification-position-gnome-extension   |
+| Validated Version             | (git/tag) 1.0.6                                                           |
+| Commit on Repo for Validation | 34dcc6038866dc29bc66edb485379fb3aa0dc97d                                  |
 
 
 *** Notification Banner Reloaded
@@ -50,3 +65,5 @@ My verification process is a follows:
 
 
 ** Unsafe Plugins
+
+None found yet
