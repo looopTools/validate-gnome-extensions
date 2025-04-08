@@ -26,6 +26,20 @@ My verification process is a follows:
 
 ** Safe Plugins
 
+*** Search Light
+
+A sort of app launcher bar
+
+| Item                          | Value                                                     |
+|-------------------------------+-----------------------------------------------------------|
+| Gnome Extension URL           | https://extensions.gnome.org/extension/5489/search-light/ |
+| Repository URL                | https://github.com/icedman/search-light                   |
+| Validate Version              | NaN (main branch head)                                    |
+| Commit on Repo for Validation | e7a351121706343abe7a164b625a55e245c16ab5                  |
+
+*NOTE:* It would be nice if the repo added tags for releases would make it more manageable to verify.
+
+
 *** Workspace Matrix
 
 Allows for arranging work spaces in a 2d grid instead of the default straight line.
